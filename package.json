@@ -1,17 +1,16 @@
 {
   "name": "react-watch",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "log component lifecycle",
   "main": "index.es5.js",
   "jsnext:main": "index.js",
   "scripts": {
     "build": "babel index.js > index.es5.js",
-	"pretest": "browserify test/test.js -t babelify > test/test.es5.js",
+    "pretest": "browserify test/test.js -t babelify > test/test.es5.js",
     "test": "http-server -p $PORT -c-1 -o test/test.html ./test",
-
-	"preversion": "npm run build",
-	"version": "git add . --all",
-	"postversion": "git push --follow-tags"
+    "preversion": "npm run build",
+    "version": "git add . --all",
+    "postversion": "git push --follow-tags"
   },
   "repository": {
     "type": "git",
