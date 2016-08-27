@@ -1,0 +1,11 @@
+{
+	"presets": [ "es2015" ],
+	"plugins": [
+		"add-module-exports",
+		"transform-class-properties",
+	    "transform-object-rest-spread",
+		"syntax-jsx",
+		"transform-react-display-name",
+		"transform-react-jsx"
+	]
+}
